@@ -152,6 +152,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         });
 
         hapusBtn.setText("Hspus");
+        hapusBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapusBtnActionPerformed(evt);
+            }
+        });
 
         keluarBtn.setText("Keluar");
 
@@ -228,6 +233,15 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
     private void hasilTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilTFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hasilTFActionPerformed
+
+    private void hapusBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusBtnActionPerformed
+        // TODO add your handling code here:
+        angkaPertamaTF.setText("");
+        angkaKeduaTF.setText(null);
+        hasilTF.setText("");
+        
+        angkaPertamaTF.requestFocus();
+    }//GEN-LAST:event_hapusBtnActionPerformed
 
     /**
      * @param args the command line arguments
